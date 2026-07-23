@@ -15,6 +15,8 @@
             --border: #1f2937;
             --warning-bg: rgba(234, 179, 8, 0.1);
             --warning-border: #eab308;
+            --thanks-bg: rgba(59, 130, 246, 0.1);
+            --thanks-border: #3b82f6;
         }
 
         * {
@@ -72,8 +74,23 @@
 
         .subtitle {
             color: var(--text-muted);
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-size: 1.1rem;
+        }
+
+        /* صندوق الشكر الخاص */
+        .thanks-box {
+            background-color: var(--thanks-bg);
+            border: 1px solid var(--thanks-border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            color: #93c5fd;
+        }
+
+        .thanks-box h3 {
+            margin-bottom: 8px;
+            color: #60a5fa;
         }
 
         .reassurance-box {
@@ -148,10 +165,10 @@
         <h1>دليل تعديل الـ PS4 (إصدار 5.05 الأساسي)</h1>
         <p class="subtitle">كل ما تحتاج معرفته عن بداية الاستقرار الحقيقي لتعديل البلايستيشن بأمان تام.</p>
 
-        <!-- صندوق الشكر والتقدير -->
-        <div class="reassurance-box" style="background-color: rgba(59, 130, 246, 0.1); border-color: var(--accent); color: #93c5fd;">
-            <h3>🙏 شكر خاص وتقدير واجتمع:</h3>
-            <p>كل الشكر والتقدير للمبدعين <strong>Karo</strong> على استضافاتهم الدائمة والمنظمة، والأسطورة <strong>Al-Azif</strong> على أدواته العظيمة وخدمات حماية وحجب التحديثات التي سهلت الكثير على مجتمع اللاعبين.</p>
+        <!-- صندوق الشكر الخاص (مضاف بالأعلى كما طلبت) -->
+        <div class="thanks-box">
+            <h3>⭐ شكر خاص وتقدير واجتمع:</h3>
+            <p>كل الشكر والتقدير للمبدع <strong>Karo</strong> على استضافاته الدائمة والمستقرة، والأسطورة <strong>Al-Azif</strong> على أدواته العظيمة وخدمات حماية وحجب التحديثات التي سهلت الكثير على مجتمع اللاعبين.</p>
         </div>
 
         <!-- صندوق الطمأنة -->
