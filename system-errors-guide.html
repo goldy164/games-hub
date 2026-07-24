@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل التعامل مع أخطاء النظام - GameHub</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent: #3b82f6;
+            --border: #1f2937;
+            --warning-bg: rgba(234, 179, 8, 0.1);
+            --warning-border: #eab308;
+            --danger-bg: rgba(239, 68, 68, 0.1);
+            --danger-border: #ef4444;
+            --success-bg: rgba(16, 185, 129, 0.1);
+            --success-border: #10b981;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .back-btn {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .back-btn:hover {
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .content-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        .content-box h2 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .warning-box {
+            background-color: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #fde047;
+        }
+
+        .warning-box h3 {
+            color: #facc15;
+            margin-bottom: 8px;
+        }
+
+        .danger-box {
+            background-color: var(--danger-bg);
+            border: 1px solid var(--danger-border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #fca5a5;
+        }
+
+        .danger-box h3 {
+            color: #f87171;
+            margin-bottom: 8px;
+        }
+
+        .success-box {
+            background-color: var(--success-bg);
+            border: 1px solid var(--success-border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #6ee7b7;
+        }
+
+        .success-box h3 {
+            color: #34d399;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            padding-right: 20px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        code {
+            background-color: #1f2937;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #60a5fa;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- شريط التنقل -->
+        <nav>
+            <a href="index.html" class="logo">🎮 GameHub</a>
+            <a href="guides.html" class="back-btn">← العودة لقائمة الشروحات</a>
+        </nav>
+
+        <h1>دليل التعامل مع أخطاء النظام (Kernel Panic)</h1>
+        <p class="subtitle">تعرف على أسباب تهنيج الجهاز وكيفية التعامل معها بكل أمان وثقة.</p>
+
+        <!-- المحتوى -->
+        <div class="content-box">
+            <h2>🚨 ما هو الـ Kernel Panic (الكيرنل بانك) وليه بيحصل؟</h2>
+            
+            <div class="warning-box">
+                <h3>⚠️ هل ده بيبوظ الجهاز؟ (طمأنة للمستخدم)</h3>
+                <p>اطمن تماماً! حدوث تهنيج أو قفل مفاجئ للجهاز أثناء محاولة تفعيل الثغرة <strong>مش بيبوظ الهاردوير ولا بيضر البلايستيشن نهائياً</strong>. دي مجرد لغة برمجة النظام بتقفل نفسها حمايةً لما الثغرة مش بتنجح بنسبة 100% في المرة دي.</p>
+            </div>
+
+            <div class="danger-box">
+                <h3>❌ إيه اللي بيحصل قدامك؟</h3>
+                <p>بتلاقي الجهاز فجأة الشاشة بتاعت زغلالت أو علقت، وبعدها الجهاز عمل "إطفاء إجباري" لوحده (الشاشة سوداء وفصل طاقة)، أو ظهرت لك رسالة خطأ باللون الأزرق أو الأحمر تفيد بإعادة تشغيل النظام.</p>
+            </div>
+
+            <div class="success-box">
+                <h3>✅ التصرف الصح لما المشكلة دي تحصل:</h3>
+                <ul>
+                    <li><strong>لو الجهاز فصل لوحده:</strong> اضغط على زر الطاقة (Power) في الجهاز من بره عشان يشتغل معاك تاني (ممكن يظهر لك إشعار التحقق من التخزين وصلاحية النظام، دي حاجة روتينية وطبيعية جداً سيبه يعدي).</li>
+                    <li><strong>جرب تفتح الاستضافة تاني:</strong> بعد ما الجهاز يفتح، ادخل على المتصفح وشغل الاستضافة (يفضل مسح الكاش أو البيانات المؤقتة للمتصفح قبل المحاولة الجديدة عشان تضمن نجاح الثغرة بسرعة).</li>
+                    <li><strong>حاول مرة تانية:</strong> ثغرات البلايستيشن مش بتشتغل من أول مرة دايماً، والطبيعي إنها تحتاج من محاولة لـ 3 محاولات عشان تثبت بنجاح.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
