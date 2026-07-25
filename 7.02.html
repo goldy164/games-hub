@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل تعديل الـ PS4 (إصدار 7.02) - GameHub</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.3);
+            --border: #1f2937;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .back-btn {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .back-btn:hover {
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            flex: 1;
+            width: 100%;
+            text-align: right;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .section-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-card h2 {
+            font-size: 1.35rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .section-card p, .section-card li {
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .section-card ul, .section-card ol {
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+        .karo-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .karo-btn:hover {
+            background-color: #2563eb;
+        }
+
+        code {
+            color: #f3f4f6;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- شريط التنقل -->
+        <nav>
+            <a href="versions.html" class="back-btn">← العودة لقائمة الإصدارات</a>
+            <a href="index.html" class="logo">🎮 GameHub</a>
+        </nav>
+
+        <h1>دليل تعديل الـ PS4 (إصدار 7.02)</h1>
+        <p class="subtitle">تعديل بدون فلاشة USB يعتمد على المتصفح بشكل كامل، مع شرح تفصيلي لخيارات الاستضافة.</p>
+
+        <!-- قسم الشكر والتقدير -->
+        <div class="section-card">
+            <h2>⭐ شكر خاص وتقدير</h2>
+            <p>كل الشكر للمبدع <strong>Karo</strong> على استضافاته المستقرة، والمطورين العظماء على تطوير وتثبيت ثغرات نظام 7.02.</p>
+        </div>
+
+        <!-- هل الإصدار يحتاج فلاشة؟ -->
+        <div class="section-card">
+            <h2>💡 هل إصدار 7.02 يحتاج فلاشة؟</h2>
+            <p>لا، التعديل يتم بالكامل عبر متصفح البلايستيشن <strong>بدون الحاجة نهائياً لأي فلاشة USB</strong>، لكنه قد يحتاج أحياناً لأكثر من محاولة حتى تنجح الثغرة.</p>
+        </div>
+
+        <!-- 1. تحقق من إصدار جهازك -->
+        <div class="section-card">
+            <h2>1. تحقق من إصدار جهازك أولاً (خطوة ضرورية جداً)</h2>
+            <p>قبل ما تبدأ في أي خطوة، لازم تتأكد إن إصدار جهازك هو <strong>7.02 بالملي</strong>، لأن الثغرة دي مش هتعمل نهائياً لو إصدارك أحدث أو أقدم:</p>
+            <ol>
+                <li>من القائمة الرئيسية للجهاز، ادخل على <strong>Settings</strong> (الإعدادات).</li>
+                <li>انزل تحت خالص واختار <strong>System</strong> (النظام).</li>
+                <li>ادخل على <strong>System Information</strong> (معلومات النظام).</li>
+                <li>تأكد إن خانة <strong>System Software</strong> مكتوب قدامها الرقم <strong>7.02</strong> بالضبط.</li>
+            </ol>
+        </div>
+
+        <!-- 2. تأمين الاتصال وحجب التحديثات -->
+        <div class="section-card">
+            <h2>2. تأمين الاتصال وحجب التحديثات بـ DNS Al-Azif (خطوة إجبارية)</h2>
+            <p>عشان تحمي جهازك من التحديث التلقائي لسوني وتتصل بأمان:</p>
+            <ol>
+                <li>روح على <strong>Settings</strong> ثم <strong>Network</strong> ثم <strong>Set Up Internet Connection</strong>.</li>
+                <li>اختار نوع الاتصال (Wi-Fi أو LAN) واختار <strong>Custom</strong> (مخصص).</li>
+                <li>في إعدادات الـ DNS اختار <strong>Manual</strong>، ودخل الأرقام التالية:
+                    <ul>
+                        <li><strong>Primary DNS:</strong> <code>165.227.83.145</code></li>
+                        <li><strong>Secondary DNS:</strong> سيبه فاضي أو خليه <code>0.0.0.0</code></li>
+                    </ul>
+                </li>
+                <li>أكمل باقي الخطوات (Automatic و Do Not Use) وبكده جهازك محمي تماماً.</li>
+            </ol>
+        </div>
+
+        <!-- 3. ماذا تختار داخل استضافة Karo -->
+        <div class="section-card">
+            <h2>3. ماذا تختار داخل استضافة Karo لإصدار 7.02؟ (توضيح الاختيارات)</h2>
+            <p>لما تدخل على موقع Karo وتختار قسم 7.02، هتلاقي أسماء واختيارات كتيرة. إليك معناها عشان تختار الصح:</p>
+            <ul>
+                <li><strong>7.02 / goldhen702:</strong> الخيار الأساسي والرئيسي لتفعيل الـ GoldHEN المباشر والمستقر على النظام (يُنصح بالبدء به دائماً).</li>
+                <li><strong>7.02A (Alih):</strong> نسخة معدلة من الثغرة مدمج معها بعض التحسينات الطفيفة أو الحلقات البرمجية البديلة لتقليل أخطاء النظام (Kernel Panic).</li>
+                <li><strong>7.02L (Loader):</strong> مخصص لتحميل أدوات محددة أو تشغيل لواحق برمجية متقدمة (غالباً مش هتحتاجه كمستخدم عادي للألعاب).</li>
+                <li><strong>esp702tr:</strong> مخصص للأجهزة المصغرة أو الـ ESP Boards (مثل الراوتر الصغير أو القطع الخارجية اللي بتبث استضافة محلية أحياناً).</li>
+            </ul>
+        </div>
+
+        <!-- 4. خطوات تشغيل الثغرة عبر الاستضافة -->
+        <div class="section-card">
+            <h2>4. خطوات تشغيل الثغرة عبر الاستضافة</h2>
+            <ol>
+                <li>تأكد من تفعيل الـ DNS المتصل بالإنترنت، ثم افتح متصفح الـ PS4.</li>
+                <li>ادخل على استضافة Karo الشهيرة.</li>
+                <li>اضغط على خيار <strong>7.02</strong> أو <strong>goldhen702</strong> المفضل لديك.</li>
+                <li>انتظر قليلاً حتى يتم تحميل ملفات الـ Cache وسيقوم الجهاز بتطبيق الثغرة.</li>
+                <li>لو ظهرت رسالة نجاح مثل <code>You're all set</code> أو تفعيل الـ GoldHEN، مبروك عليك! (لو الجهاز هنج أو فصل مفاجئ، دي طبيعة 7.02 أحياناً، كل ما عليك إعادته والمحاولة مرة أخرى حتى تنجح).</li>
+            </ol>
+            
+            <!-- زر الانتقال المباشر لاستضافة Karo -->
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="http://karo218.ir" target="_blank" class="karo-btn">🔗 الانتقال المباشر لاستضافة Karo</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
