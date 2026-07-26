@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - ثغرة ntfonto لإصدارات 10.00 إلى 11.02</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.3);
+            --border: #1f2937;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .dev-banner {
+            background-color: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 8px;
+            padding: 8px 15px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #93c5fd;
+            margin-bottom: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        .dev-banner span {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            flex: 1;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .content-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 30px;
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+        .content-card h2 {
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .content-card p, .content-card li {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .content-card ul {
+            margin-right: 20px;
+            margin-bottom: 15px;
+        }
+
+        .warning-text {
+            color: #ef4444 !important;
+            font-weight: bold;
+        }
+
+        .btn-host {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px var(--accent-glow);
+        }
+
+        .btn-host:hover {
+            background-color: #2563eb;
+        }
+
+        .help-note {
+            background-color: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 15px;
+            color: #fca5a5;
+            font-size: 0.95rem;
+        }
+
+        .help-note a {
+            color: #93c5fd;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dev-banner">
+        Developed by <span>Vigito</span> | Special thanks to: <span>zecoxao</span> على تطوير الصفحة والثغرة
+    </div>
+
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">🎮 GameHub</a>
+        </nav>
+
+        <h1>ثغرة ntfonto للإصدارات (10.00 إلى 11.02)</h1>
+        <p class="subtitle">تجربة تشغيل الثغرة عبر المتصفح بدون أجهزة خارجية</p>
+
+        <div class="content-card">
+            <h2>📌 تفاصيل الثغرة ومستوى الاستقرار</h2>
+            <p>تدعم هذه الثغرة نطاق إصدارات النظام من <strong>10.00 وحتى 11.02</strong>، ويتم تفعيلها مباشرة عبر متصفح الجهاز (User Guide) تماماً مثل الثغرات التقليدية.</p>
+            <ul>
+                <li><strong>مستوى الاستقرار:</strong> تعمل بشكل جيد على الإصدارات الأولى ضمن النطاق، ولكنها تعتبر <span class="warning-text">تجريبية وغير مستقرة تماماً على إصدار 11.02</span>، حيث يُعد معدل استقرارها عليه شبه معدوم وقد تتسبب في إعادة تشغيل الجهاز (Kernel Panic) بشكل متكرر.</li>
+            </ul>
+
+            <h2>🔒 طريقة تشغيل الإنترنت بأمان</h2>
+            <p>لتجنب تحديث الجهاز تلقائياً أو حدوث أي مشاكل أثناء تصفح الاستضافة:</p>
+            <ul>
+                <li>قم بمنع تحديثات النظام عبر إعدادات الشبكة أو استخدام DNS حجب التحديثات.</li>
+                <li>تأكد من إيقاف الاتصال التلقائي بالإنترنت بعد نجاح تحميل الصفحة إذا تطلب الأمر.</li>
+            </ul>
+
+            <div class="help-note">
+                💡 <strong>لو مش فاهم حاجة أو تواجهك مشكلة:</strong> توجه فوراً إلى قسم الشروحات لمتابعة الفيديو التوضيحي للخطوات: <br>
+                <a href="https://youtu.be/0aCAT6L56kE?si=HjAbAiK4pkctcVr1" target="_blank">مشاهدة شرح طريقة الاستخدام على يوتيوب</a>
+            </div>
+
+            <div style="text-align: center; margin-top: 25px;">
+                <a href="https://zecoxao.github.io/ntfonto/" class="btn-host" target="_blank">🚀 الانتقال إلى استضافة ntfonto</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>GameHub &copy; 2026 - جميع الحقوق محفوظة لمجتمع اللاعبين</p>
+    </footer>
+
+</body>
+</html>
