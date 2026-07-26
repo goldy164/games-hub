@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فيديوهات الشرح - GameHub</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.2);
+            --border: #1f2937;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .back-btn {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .back-btn:hover {
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .guide-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 25px var(--accent-glow);
+        }
+
+        .guide-card h3 {
+            color: var(--accent);
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+
+        .guide-card p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .card-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .card-btn:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- شريط التنقل -->
+        <nav>
+            <a href="index.html" class="logo">🎮 GameHub</a>
+            <a href="guides.html" class="back-btn">← العودة للشروحات</a>
+        </nav>
+
+        <h1>مكتبة فيديوهات الشرح</h1>
+        <p class="subtitle">اختر القسم المرئي الذي ترغب في استعراضه.</p>
+
+        <!-- شبكة الأقسام الفرعية للفيديوهات -->
+        <div class="guides-grid">
+            
+            <!-- الملف الأول: شرح فيديوهات الإصدارات -->
+            <div class="guide-card">
+                <div>
+                    <h3>🎥 شرح فديوهات الإصدارات</h3>
+                    <p>فيديوهات تفصيلية توضح طريقة تطبيق الثغرات وخطوات التعديل لكل إصدارات النظام.</p>
+                </div>
+                <a href="versions-videos.html" class="card-btn">عرض الفيديوهات</a>
+            </div>
+
+            <!-- الملف الثاني: شرح كل شيء متعلق بالألعاب -->
+            <div class="guide-card">
+                <div>
+                    <h3>🎮 شرح كل شيء متعلق بالعاب PS4</h3>
+                    <p>دليل مرئي شامل لكل ما يخص الألعاب، تثبيت ملفات الـ PKG، ونقلها على الجهاز.</p>
+                </div>
+                <a href="games-videos.html" class="card-btn">عرض الفيديوهات</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
