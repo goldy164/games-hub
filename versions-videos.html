@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرح فيديوهات الإصدارات - GameHub</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.3);
+            --border: #1f2937;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 40px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .back-btn {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .back-btn:hover {
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            flex: 1;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .video-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: right;
+            transition: all 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 12px 30px var(--accent-glow);
+        }
+
+        .video-card h3 {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .card-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px var(--accent-glow);
+            margin-top: 15px;
+        }
+
+        .card-btn:hover {
+            background-color: #2563eb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- شريط التنقل -->
+        <nav>
+            <a href="index.html" class="logo">🎮 GameHub</a>
+            <a href="videos-guide.html" class="back-btn">← العودة لقسم الفيديوهات</a>
+        </nav>
+
+        <h1>شرح فيديوهات الإصدارات</h1>
+        <p class="subtitle">اختر الفيديو أو القائمة المناسبة لمتابعة خطوات التعديل إصدار بجهازك.</p>
+
+        <!-- شبكة الفيديوهات -->
+        <div class="videos-grid">
+            
+            <!-- 1. إصدار 5.05 -->
+            <div class="video-card">
+                <div>
+                    <h3>5.05 playlist للتعديل من قناه modded farmware</h3>
+                </div>
+                <a href="https://youtube.com/playlist?list=PLn7ji3VsPy3H0C6UWSpZYl6PLj2QxHEWO&si=X-TmhX68J-UKaJBC" class="card-btn" target="_blank">📺 مشاهدة القائمة</a>
+            </div>
+
+            <!-- 2. إصدار 6.72 -->
+            <div class="video-card">
+                <div>
+                    <h3>فيديو شرح لكيفية تعديل PS4 6.72</h3>
+                </div>
+                <a href="https://youtu.be/uQbdQL7wkx8?si=scvOamVyFG67-azc" class="card-btn" target="_blank">🎬 مشاهدة الشرح</a>
+            </div>
+
+            <!-- 3. إصدار 7.02 -->
+            <div class="video-card">
+                <div>
+                    <h3>فيديو تعديل PS4 7.02</h3>
+                </div>
+                <a href="https://youtu.be/gPIgid3q-GI?si=MZW0YT9hZgDHAb1B" class="card-btn" target="_blank">🎬 مشاهدة الشرح</a>
+            </div>
+
+            <!-- 4. إصدار 7.55 -->
+            <div class="video-card">
+                <div>
+                    <h3>فيديو تعديل PS4 7.55</h3>
+                </div>
+                <a href="https://youtu.be/BDj8tOXLv2s?si=UziIiEr5m49PTU_Y" class="card-btn" target="_blank">🎬 مشاهدة الشرح</a>
+            </div>
+
+            <!-- 5. إصدار 9.0 إلى 9.60 -->
+            <div class="video-card">
+                <div>
+                    <h3>فيديو تعديل PS4 9.0 to 9.60</h3>
+                </div>
+                <a href="https://youtu.be/L-Pqpj8j2Lo?si=NGEBoq3YU0HodTUZ" class="card-btn" target="_blank">🎬 مشاهدة الشرح</a>
+            </div>
+
+            <!-- 6. إصدار 10 إلى 11.02 -->
+            <div class="video-card">
+                <div>
+                    <h3>كيفية تعديل PS4 10 to 11.02 من صفحة ntfonto</h3>
+                </div>
+                <a href="https://youtu.be/qQs41Nho3YI?si=dM5ktkzhIPv1tFYE" class="card-btn" target="_blank">🎬 مشاهدة الشرح</a>
+            </div>
+
+            <!-- 7. تثبيت VUE من 7.00 ل 13.00 -->
+            <div class="video-card">
+                <div>
+                    <h3>تثبيت VAU لتعديل PS4 من 7.00 ل 13.00</h3>
+                </div>
+                <a href="https://youtu.be/3uZymj2467E?si=iOjjYXwvtVDwbLTA" class="card-btn" target="_blank">🎬 مشاهدة الشرح</a>
+            </div>
+
+            <!-- 8. زيادة استقرار الثغرة ل 70% -->
+            <div class="video-card">
+                <div>
+                    <h3>زيادة استقرار الثغرة ل 70%</h3>
+                </div>
+                <a href="https://youtu.be/0w2xf-MfTy8?si=R0_JsHuhNCybsK7z" class="card-btn" target="_blank">🎬 مشاهدة الشرح</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>GameHub &copy; 2026 - جميع الحقوق محفوظة لمجتمع اللاعبين</p>
+    </footer>
+
+</body>
+</html>
